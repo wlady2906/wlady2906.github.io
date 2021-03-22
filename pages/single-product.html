@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../img/wladytech-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../fonts/fontawesome-free-5.15.1-web/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+    <title>E-Commerce Template - Single product</title>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <a href="../index.html"></a><img src="../img/wladytechsite-logo-pc-1.png" alt="">
+        </div>
+        <div class="close">
+            <span id="menuclose" class="fas fa-times"></span>
+        </div>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-shopping-bag"></i>  Shop</a>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Shop Grid</a></li>
+                    <li><a href="#">Shop List</a></li>
+                    <li><a href="../pages/single-product.html">Single Product</a></li>
+                    <li><a href="#">Account Page</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-sitemap"></i> Pages</a>
+                <ul>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Shopping Cart</a>
+                    <a href="#">Login & Register</a>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-blog"></i> Blog</a>
+                <ul>
+                    <a href="../pages/single-blog.html">Single Blog</a>
+                    <a href="#">Blog Grid</a>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fab fa-elementor"></i>Elements</a>
+                <ul>
+                    <a href="#">Gallery</a>
+                    <a href="#">Compare</a>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-mobile-alt"></i>Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../img/wladytechsite-logo-pc-1.png" alt="">
+            </a>
+        </div>
+        <div class="navbar-toggler">
+            <span id="menuopen" class="fas fa-bars"></span>
+        </div>
+        <!-- Navbar area -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <div class="subnav">
+                    <li><a href="#">Shop</a></li>
+                    <ul class="subnav-content">
+                        <a href="#">Dashboard</a>
+                        <a href="#">Shop Grid</a>
+                        <a href="#">Shop List</a>
+                        <a href="../pages/single-product.html">Single Product</a>
+                        <a href="#">Account Page</a>
+                    </ul>
+                </div>
+                </li>
+                <div class="subnav">
+                    <li><a href="#">Pages</a></li>
+                    <ul class="subnav-content">
+                        <a href="#">About Us</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Shopping Cart</a>
+                        <a href="#">Login & Register</a>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <li><a href="#">Blog</a></li>
+                    <ul class="subnav-content">
+                        <a href="../pages/single-blog.html">Single Blog</a>
+                        <a href="#">Blog Grid</a>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <li><a href="#">Elements</a></li>
+                    <ul class="subnav-content">
+                        <a href="#">Gallery</a>
+                        <a href="#">Compare</a>
+                    </ul>
+                </div>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Navbar area -->
+
+        <div class="option-panel">
+            <form class="search-form">
+                <input class="form-control" type="search" placeholder="Introduce a search criteria">
+                <button><i class="fas fa-search"></i></button>
+            </form>
+            
+            <div class="whislist-area">
+                <button class="whislist"><i class="fas fa-heart"></i></button>
+            </div>
+            
+            <div class="cart-area">
+                <button class="cart"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+            
+            <div id="user-drop" class="user-thumbnail">
+                <img src="img/wlady-tech-user.jpg" alt="">
+                <ul class="user-content">
+                    <li><span>Hello, Wladimir De la S</span></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Whislist</a></li>
+                    <li><a href="#">Order List</a></li>
+                    <li><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+        <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a class="active" href="#">Product Details</a></li>
+        </ol>
+    </div>
+    <div class="container">
+        <!-- PRODUCT-DETAILS GRID -->
+        <div class="product-details-grid">
+            <div class="image-carrousel">
+                <div class="udp-image-big">
+                    <img src="../img/msi_trx40_pro_wifi_motherboard.jpg" alt="">
+                </div>
+            </div>
+            <!-- PRODUCT SHEET -->
+            <div class="product-sheet">
+                <!-- HEADER -->
+                <div class="product-sheet-header">
+                    <h1 class="h1 mb">MSI TRX40 PRO - 
+                        Placa base WiFi (AMD sTRX4, PCIe Gen4, M.2, USB3.2 Gen2x2, DDR4, Dual 10G LAN, Wi-Fi 6, ATX)
+                    </h1>
+                    <div class="price-tags">
+                        <span class="price current">$ 332.50</span>
+                        <span class="price old">$ 452.50</span>
+                    </div>
+                    <div class="star-rating">
+                        <span class="fas fa-star checked"></span>
+                        <span class="fas fa-star checked"></span>
+                        <span class="fas fa-star checked"></span>
+                        <span class="fas fa-star checked"></span>
+                        <span class="far fa-star"></span>
+                    </div>
+                </div>
+                <!-- DETAILS -->
+                <div class="product-sheet-description">
+                    <table>
+                        <tbody>
+                            <tr class="table-spacing">
+                                <td class="table-span"><span class="table-text-bold">Mark M</span></td>
+                                <td><span class="tb-base-title">YES</span></td>
+                            </tr>
+                            <tr class="table-spacing">
+                                <td class="table-span"><span class="table-text-bold">CPU socket</span></td>
+                                <td><span class="tb-base-title">TRX4 socket</span></td>
+                            </tr>
+                            <tr class="table-spacing">
+                                <td class="table-span"><span class="table-text-bold">RAM Memory Technology </span></td>
+                                <td><span class="tb-base-title">DDR4</span></td>
+                            </tr>
+                            <tr class="table-spacing">
+                                <td class="table-span"><span class="table-text-bold">Chipset type </span></td>
+                                <td><span class="tb-base-title">AMD TRX40 Chipset</span></td>
+                            </tr>
+                            <tr class="table-spacing">
+                                <td class="table-span"><span class="table-text-bold">Memory speed </span></td>
+                                <td><span class="tb-base-title">2666 MHz</span></td>
+                            </tr>
+                            <tr class="table-spacing">
+                                <td class="table-span"><span class="table-text-bold">Platform Android</span></td>
+                                <td><span class="tb-base-title">Series TRX40P</span></td>
+                            </tr>
+                            <tr class="table-spacing">
+                                <td class="table-span"><span class="table-text-bold">RAM memory maximum capacity</span></td>
+                                <td><span class="tb-base-title">256 GB</span></td>
+                            </tr>
+                            <tr class="table-spacing">
+                                <td class="table-span"><span class="table-text-bold">Main power connector type</span></td>
+                                <td><span class="tb-base-title">24-pin</span></td>
+                            </tr>
+                            <tr class="table-spacing">
+                                <td class="table-span"><span class="table-text-bold">Graphics card interface</span></td>
+                                <td><span class="tb-base-title">PCI-E</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="control-group">
+                        <input type="number" step="1" min="1" max="12" value="1">
+                        <a href="#"><i class="fas fa-shopping-cart"></i>Add to cart</a>
+                    </div>
+                    <div class="another-options">
+                        <a href="#"><i class="fas fa-heart"></i>Whislist</a>
+                        <a href="#"><i class="fas fa-compress-alt"></i>Compare</a>
+                        <a href="#"><i class="fas fa-share"></i>Share</a>
+                    </div>
+                    <button class="btn primary white-text block">Buy Now</button>
+                </div>
+            </div>
+
+             <!-- PRODUCT TABS -->
+             <div class="product-details-tabs">
+                <ul class="tabs">
+                    <li class="tab-item">
+                        <a class="tab-link active" onclick="opentab(event,'description')">Description</a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-link" onclick="opentab(event,'reviews')" >Reviews</a>
+                    </li>
+                    <li class="tab-item">
+                        <a class="tab-link" onclick="opentab(event,'add-info')">Additional Information</a>
+                    </li>
+                </ul>
+                <div class="tabs-content">
+                    <!-- DESCRIPTION -->
+                    <div id="description" class="tab-panel active">
+                        <h3 class="mb">Description</h3>
+                        <p class="mb">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias iusto explicabo culpa minima nemo, natus pariatur magnam reiciendis unde quis impedit tenetur, 
+                            praesentium vel illo ipsum alias iste ratione magni.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam velit aut ullam. Illo repellendus, voluptates nihil autem placeat eos deleniti dicta optio 
+                            aut molestias incidunt alias, fugiat nesciunt natus.
+                        </p>
+                        <p class="mb">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias iusto explicabo culpa minima nemo, natus pariatur magnam reiciendis unde quis impedit tenetur, 
+                            praesentium vel illo ipsum alias iste ratione magni.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam velit aut ullam. Illo repellendus, voluptates nihil autem placeat eos deleniti dicta optio 
+                            aut molestias incidunt alias, fugiat nesciunt natus.
+                        </p>
+                        <div class="iframe-container mb">
+                            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/JZgyMK2duXQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                        </div>
+                        <p class="mb">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias iusto explicabo culpa minima nemo, natus pariatur magnam reiciendis unde quis impedit tenetur, 
+                            praesentium vel illo ipsum alias iste ratione magni.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam velit aut ullam. Illo repellendus, voluptates nihil autem placeat eos deleniti dicta optio 
+                            aut molestias incidunt alias, fugiat nesciunt natus.
+                        </p>
+                        <p class="mb">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias iusto explicabo culpa minima nemo, natus pariatur magnam reiciendis unde quis impedit tenetur, 
+                            praesentium vel illo ipsum alias iste ratione magni.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam velit aut ullam. Illo repellendus, voluptates nihil autem placeat eos deleniti dicta optio 
+                            aut molestias incidunt alias, fugiat nesciunt natus.
+                        </p>
+                    </div>
+
+                    <!-- REVIEWS -->
+                    <div id="reviews" class="tab-panel">
+                        <!-- review 1 -->
+                        <div class="single-user-review mb">
+                            <h3>Good Quality</h3>
+                            <div class="star-rating">
+                                <span class="fas fa-star checked"></span>
+                                <span class="fas fa-star checked"></span>
+                                <span class="fas fa-star checked"></span>
+                                <span class="fas fa-star checked"></span>
+                                <span class="fas fa-star checked"></span>
+                            </div>
+                            <p class="mb">by 
+                                <strong>WladyTechsite</strong><span> on 18 March 2021.</span> 
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda facere odit adipisci, deserunt voluptatem aspernatur consequuntur consectetur quaerat a velit, ipsa debitis 
+                                id, tempore omnis ratione? Illum dolore quas nemo.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda facere odit adipisci, deserunt voluptatem aspernatur consequuntur consectetur quaerat a velit, ipsa debitis 
+                                id, tempore omnis ratione? Illum dolore quas nemo.
+                            </p>
+                        </div>
+                        <!-- review 1 -->
+                        <div class="single-user-review mb">
+                            <h3>Outstanding Design</h3>
+                            <div class="star-rating">
+                                <span class="fas fa-star checked"></span>
+                                <span class="fas fa-star checked"></span>
+                                <span class="fas fa-star checked"></span>
+                                <span class="fas fa-star checked"></span>
+                                <span class="fas fa-star checked"></span>
+                            </div>
+                            <p class="mb">by 
+                                <strong>WladyTechsite</strong><span> on 18 March 2021.</span> 
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda facere odit adipisci, deserunt voluptatem aspernatur consequuntur consectetur quaerat a velit, ipsa debitis 
+                                id, tempore omnis ratione? Illum dolore quas nemo.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda facere odit adipisci, deserunt voluptatem aspernatur consequuntur consectetur quaerat a velit, ipsa debitis 
+                                id, tempore omnis ratione? Illum dolore quas nemo.
+                            </p>
+                        </div>
+                        
+                        <!-- Review submission -->  
+                        <div class="submit-review">
+                            <h2 class="mb">Submit A Review</h2>
+                            <p class="mb">Your ratings</p>
+                            <form action="#">
+                                <div class="star-container">
+                                    <div class="star-rating-widget">
+                                        <input type="radio" name="rating" id="radio-5">
+                                        <Label class="fas fa-star" for="radio-5"></Label>
+                                        <input type="radio" name="rating" id="radio-4">
+                                        <Label class="fas fa-star" for="radio-4"></Label>
+                                        <input type="radio" name="rating" id="radio-3">
+                                        <Label class="fas fa-star" for="radio-3"></Label>
+                                        <input type="radio" name="rating" id="radio-2">
+                                        <Label class="fas fa-star" for="radio-2"></Label>
+                                        <input type="radio" name="rating" id="radio-1">
+                                        <Label class="fas fa-star" for="radio-1"></Label>
+                                        <div class="star-rating-text">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating-details">
+                                    <label for="nickname">Username</label>
+                                    <input id="nickname" class="form-control mb" type="text" placeholder="Username">
+                                    <label for="reason">Reason for your rating</label>
+                                    <select class="form-control mb" name="reason" id="reason">
+                                        <option value="" disabled selected>Select a criteria</option>
+                                        <option value="1">Good Quality</option>
+                                        <option value="2">Oustanding Design</option>
+                                        <option value="3">Affordale Price</option>
+                                        <option value="4">Others</option>
+                                    </select>
+                                    <label for="comment">Comments</label>
+                                    <textarea class="form-control" name="" id="comment" cols="30" rows="5"
+                                    maxlength="150" placeholder="Describe your experience with the product"></textarea>
+                                </div>
+                                <button class="btn primary white-text">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- ADDITIONAL INFORMATION -->
+                    <div id="add-info" class="tab-panel">
+                        <h3 class="mb">Additional Information</h3>
+                        <p class="mb">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis eos natus itaque labore excepturi voluptatum voluptatem minima omnis dolore numquam laborum odit rem 
+                            illum repellendus corporis consequatur, saepe ipsa eius?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugit porro, dolore, dolorem, ratione veritatis ab culpa mollitia totam deserunt atque suscipit. 
+                            Odit facilis voluptas nulla nesciunt doloremque. Quos, pariatur.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="section-heading">
+            <h5>You may also like</h5>
+        </div>
+
+        <div class="product-grid">
+            <!-- PRODUCTO 1 -->
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img class="image" src="../img/Core-i5-9500 3ghz.jpg" alt="Intel Core i5-9500 3GHZ">
+                    <div class="img-hover-caption">
+                        <span class="off-sale-badge">Off Sale</span>
+                        <span class="whishlist-badge"><i class="fas fa-heart"></i></span>
+                        <button>
+                            <i class="fas fas fa-shopping-cart"></i>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card-body">
+                    <div class="product-card-description">
+                        <a href="#">Intel Core i5-9500 3GHZ</a>
+                        <span class="price-tags">
+                            <p class="price current ">$ 129.99</p>
+                            <p class="price old ">$ 142.99</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--Producto 2-->
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img class="image" src="../img/MSI MEG Z490 ACE.jpg" alt="MSI MEG Z490 ACE">
+                    <div class="img-hover-caption">
+                        <span class="off-sale-badge">Off Sale</span>
+                        <span class="whishlist-badge"><i class="fas fa-heart"></i></span>
+                        <button>
+                            <i class="fas fas fa-shopping-cart"></i>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card-body">
+                    <div class="product-card-description">
+                        <a href="#">MSI MEG Z490 ACE</a>
+                        <span class="price-tags">
+                            <p class="price current ">$ 369.99</p>
+                            <p class="price old ">$ 414.90</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--Producto 3-->
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img class="image" src="../img/HP-omen Sequencer Teclado Mecánico.jpg" alt="HP Omen Sequencer Keyboard">
+                    <div class="img-hover-caption">
+                        <span class="off-sale-badge">35%</span>
+                        <span class="whishlist-badge"><i class="fas fa-heart"></i></span>
+                        <button>
+                            <i class="fas fas fa-shopping-cart"></i>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card-body">
+                    <div class="product-card-description">
+                        <a href="#">HP Omen Sequencer Keyboard</a>
+                        <span class="price-tags">
+                            <p class="price current ">$ 109.99</p>
+                            <p class="price old ">$ 179.99</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+    
+            <!--Producto 4-->
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img class="image" src="../img/msi_trx40_pro_wifi_motherboard.jpg" alt="MSI TRX40 PRO WIFI">
+                    <div class="img-hover-caption">
+                        <span class="off-sale-badge">35%</span>
+                        <span class="whishlist-badge"><i class="fas fa-heart"></i></span>
+                        <button>
+                            <i class="fas fas fa-shopping-cart"></i>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card-body">
+                    <div class="product-card-description">
+                        <a href="#">MSI TRX40 PRO WIFI </a>
+                        <span class="price-tags">
+                            <p class="price current ">$ 332.50</p>
+                            <p class="price old ">$ 452.50</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer_area">
+                <div class="social-media">
+                    <h3 class="mb">Community</h3>
+                    <ul>
+                        <li><a href="#" title="facebook"><i class="fab fa-facebook-square"></i>Facebook</a></li>
+                        <li><a href="#" title="instagram"><i class="fab fa-instagram-square"></i>Instagram</a></li>
+                        <li><a href="#" title="youtube"><i class="fab fa-youtube"></i>Youtube</a></li>
+                        <li><a href="#" title="telegram"><i class="fab fa-telegram"></i>Telegram</a></li>
+                        <li><a href="#" title="twitter"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <h3 class="mb">Information</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-users"></i>About us</a></li>
+                        <li><a href="#"><i class="fab fa-shopify"></i>Our shops</a></li>
+                        <li><a href="#"><i class="fab fa-dochub"></i>Satisfaction survey</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <h3 class="mb">Shopping Guide</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-portrait"></i>Create an account</a></li>
+                        <li><a href="#"><i class="fab fa-paypal"></i>Payings</a></li>
+                        <li><a href="#"><i class="fas fa-shipping-fast"></i>Shipping</a></li>
+                        <li><a href="#"><i class="fab fa-servicestack"></i>Costumer protection</a></li>
+                    </ul>
+                </div>
+    
+                <div class="social-media">
+                    <h3 class="mb">Support</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-dolly-flatbed"></i>Customer support</a></li>
+                        <li><a href="#"><i class="fas fa-bug"></i>Report a bug</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <h3 class="mb">Join to Our Newsletter</h3>
+                    <input class="mb" type="email" placeholder="Your E-mail Address" required="">
+                    <button type="submit">Subscribe</button>
+                    <h3 class="mb">Payment Methods</h3>
+                    <div class="payment-method">
+                        <img src="../img/payment-methods/paypal.png" alt="">
+                        <img src="../img/payment-methods/discover.png" alt="">
+                        <img src="../img/payment-methods/maestro.png" alt="">
+                        <img src="../img/payment-methods/american-express.png" alt="">
+                        <img src="../img/payment-methods/western-union.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="col-50">
+                    <div class="copywrite-text">
+                        <p>Made with <strong> by WladyTechsite </strong> &copy; 2021 </p>
+                    </div>
+                </div>
+                <div class="col-50">
+                    <div class="technology-item">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js-square"></i>
+                        <i class="fab fa-firefox-browser"></i>
+                        <i class="fab fa-chrome"></i>
+                        <i class="fas fa-mobile"></i>
+                        <i class="fab fa-angular"></i>
+                        <i class="fas fa-server"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <button title="back to top" id="btn-scroll" onclick="topfunction()"><span class="fas fa-arrow-up"></span></button>
+    
+    
+    
+    </div>
+    <script src="../js/mostrar.js"></script>
+    <script src="../js/scroll-to-top.js"></script>
+    <script>
+        function opentab(evt, tabid) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-panel");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace("active", "");
+            }
+            document.getElementById(tabid).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../img/wladytech-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../fonts/fontawesome-free-5.15.1-web/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+    <title>E-Commerce Template - Single Blog</title>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <a href="../index.html"></a><img src="../img/wladytechsite-logo-pc-1.png" alt="">
+        </div>
+        <div class="close">
+            <span id="menuclose" class="fas fa-times"></span>
+        </div>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-shopping-bag"></i>  Shop</a>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Shop Grid</a></li>
+                    <li><a href="#">Shop List</a></li>
+                    <li><a href="../pages/single-product.html">Single Product</a></li>
+                    <li><a href="#">Account Page</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-sitemap"></i> Pages</a>
+                <ul>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Shopping Cart</a>
+                    <a href="#">Login & Register</a>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-blog"></i> Blog</a>
+                <ul>
+                    <a href="#">Single Blog</a>
+                    <a href="#">Blog Grid</a>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fab fa-elementor"></i>Elements</a>
+                <ul>
+                    <a href="#">Gallery</a>
+                    <a href="#">Compare</a>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-mobile-alt"></i>Contact</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../img/wladytechsite-logo-pc-1.png" alt="">
+            </a>
+        </div>
+        <div class="navbar-toggler">
+            <span id="menuopen" class="fas fa-bars"></span>
+        </div>
+        <!-- Navbar area -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <div class="subnav">
+                    <li><a href="#">Shop</a></li>
+                    <ul class="subnav-content">
+                        <a href="#">Dashboard</a>
+                        <a href="#">Shop Grid</a>
+                        <a href="#">Shop List</a>
+                        <a href="../pages/single-product.html">Single Product</a>
+                        <a href="#">Account Page</a>
+                    </ul>
+                </div>
+                </li>
+                <div class="subnav">
+                    <li><a href="#">Pages</a></li>
+                    <ul class="subnav-content">
+                        <a href="#">About Us</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Shopping Cart</a>
+                        <a href="#">Login & Register</a>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <li><a href="#">Blog</a></li>
+                    <ul class="subnav-content">
+                        <a href="../pages/single-blog.html">Single Blog</a>
+                        <a href="#">Blog Grid</a>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <li><a href="#">Elements</a></li>
+                    <ul class="subnav-content">
+                        <a href="#">Gallery</a>
+                        <a href="#">Compare</a>
+                    </ul>
+                </div>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Navbar area -->
+
+        <div class="option-panel">
+            <form class="search-form">
+                <input class="form-control" type="search" placeholder="Introduce a search criteria">
+                <button><i class="fas fa-search"></i></button>
+            </form>
+            
+            <div class="whislist-area">
+                <button class="whislist"><i class="fas fa-heart"></i></button>
+            </div>
+            
+            <div class="cart-area">
+                <button class="cart"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+            
+            <div id="user-drop" class="user-thumbnail">
+                <img src="img/wlady-tech-user.jpg" alt="">
+                <ul class="user-content">
+                    <li><span>Hello, Wladimir De la S</span></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Whislist</a></li>
+                    <li><a href="#">Order List</a></li>
+                    <li><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </header>
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+        <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a class="active" href="../pages/single-blog.html">Single Blog</a></li>
+        </ol>
+    </div>
+    <div class="container">
+        <!-- SINGLE POST GRID -->
+        <section class="blog-posting-grid">
+            <div class="blog-details">
+                <div class="blog-img mb">
+                    <img src="../img/black and silver laptop computer on table.jpg" alt="">
+                </div>
+                <h3 class="mb">Web Applications Development</h3>
+                <div class="blog-status mb">
+                    <span><i class="fas far fa-user-circle"></i> WladyTechsite</span>
+                    <span><i class="far fa-clock"></i> 19 March 2021</span>
+                    <span><i class="fas fa-globe"></i> Web development</span>
+                    <a href="#"><i class="fa fa-comment"></i> 3 comments</a>
+                </div>
+                <div class="blog-content">
+                    <p class="mb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis quibusdam maiores fugiat, officia mollitia exercitationem, aliquid optio ipsum ipsa aut quam repellat amet quaerat 
+                        neque doloribus, voluptatem temporibus distinctio? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id voluptas rerum saepe cum! Rem, porro. Necessitatibus, laboriosam illo! Qui velit distinctio consectetur 
+                        in maiores debitis numquam pariatur voluptates est commodi!
+                    </p>
+                    <p class="mb">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Perspiciatis dolor voluptates ex quo, similique eveniet temporibus assumenda vel sint, velit voluptate sunt nostrum saepe quaerat hic 
+                        provident illum maxime quia.
+                    </p>
+                    <p class="mb">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolor voluptates ex quo, similique eveniet temporibus assumenda vel sint, velit voluptate sunt nostrum saepe quaerat hic 
+                        provident illum maxime quia.
+                    </p>
+                    <p class="mb">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolor voluptates ex quo, similique eveniet temporibus assumenda vel sint, velit voluptate sunt nostrum saepe quaerat hic 
+                        provident illum maxime quia.
+                    </p>
+                    <p class="mb">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolor voluptates ex quo, similique eveniet temporibus assumenda vel sint, velit voluptate sunt nostrum saepe quaerat hic 
+                        provident illum maxime quia.
+                    </p>
+                    <p class="mb">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolor voluptates ex quo, similique eveniet temporibus assumenda vel sint, velit voluptate sunt nostrum saepe quaerat hic 
+                        provident illum maxime quia.
+                    </p>
+                    <p class="mb">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolor voluptates ex quo, similique eveniet temporibus assumenda vel sint, velit voluptate sunt nostrum saepe quaerat hic 
+                        provident illum maxime quia.
+                    </p>
+                </div>
+            </div>
+            <aside class="blog-sideoptions">
+                <div class="blog-widget">
+                    <form class="blog-searchbar">
+                        <h5>Search Post</h5>
+                        <input class="form-control" type="search" placeholder="Enter a keyword">
+                    </form>
+                </div>
+                <div class="blog-widget">
+                    <h5 class="mb">Recent Post</h5>
+                    <div class="blog-latest">
+                        <div class="post-img">
+                            <img src="../img/black and silver laptop computer on table.jpg" alt="black and silver laptop computer on table">
+                        </div>
+                        <div class="post-content">
+                            <a class="mb" href="#">Algorithmic Warfare. 
+                                You have to read this.
+                            </a>
+                            <p>2 days ago</p>
+                        </div>
+                    </div>
+
+                    <div class="blog-latest">
+                        <div class="post-img">
+                            <img src="../img/domenico-loia-EhTcC9sYXsw-unsplash.jpg" alt="">
+                        </div>
+                        <div class="post-content">
+                            <a class="mb" href="#"> Front-End Development. All you need to know
+                            </a>
+                            <p>2 days ago</p>
+                        </div>
+                    </div>
+
+                    <div class="blog-latest">
+                        <div class="post-img">
+                            <img src="../img/sergey-sokolov-_g4MxOaBNvs-unsplash.jpg" alt="">
+                        </div>
+                        <div class="post-content">
+                            <a class="mb" href="#"> Back-End Development. All you need to know
+                            </a>
+                            <p>2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-widget">
+                    <h5 class="mb">Categories</h5>
+                    <ul class="tags-cloud">
+                        <li><a href="#">Web</a></li>
+                        <li><a href="#">Web development</a></li>
+                        <li><a href="#">Operating systems</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Hardware</a></li>
+                        <li><a href="#">Software</a></li>
+                        <li><a href="#">Artificial Intelligence</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <section class="blog-comments">
+                <div class="comments-area">
+                    <h5>Comments <span>3</span></h5>
+                    <div class="single-comments-area">
+                        <ol>
+                            <li>
+                                <div class="comment-main">
+                                    <div class="user-meta">
+                                        <img src="../img/wlady-tech-user.jpg" alt="">
+                                    </div>
+                                    <div class="user-commentary">
+                                        <h5>WladyTechsite</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima placeat, quibusdam animi corrupti modi rerum voluptatum tempore dolorum dicta dignissimos eum, reprehenderit consequatur, 
+                                            magni explicabo natus repudiandae molestiae labore quo!
+                                        </p>
+                                        <span>Reply</span>
+                                    </div>
+                                </div>
+                                <ul class="commnent-reply">
+                                    <div class="comment-main">
+                                        <div class="user-meta">
+                                            <img src="../img/wlady-tech-user.jpg" alt="">
+                                        </div>
+                                        <div class="user-commentary">
+                                            <h5>WladyTechsite</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima placeat, quibusdam animi corrupti modi rerum voluptatum tempore dolorum dicta dignissimos eum, reprehenderit consequatur, 
+                                                magni explicabo natus repudiandae molestiae labore quo!
+                                            </p>
+                                            <span>Reply</span>
+                                        </div>
+                                    </div>
+                                    <ul class="commnent-reply">
+                                        <div class="comment-main">
+                                            <div class="user-meta">
+                                                <img src="../img/wlady-tech-user.jpg" alt="">
+                                            </div>
+                                            <div class="user-commentary">
+                                                <h5>WladyTechsite</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima placeat, quibusdam animi corrupti modi rerum voluptatum tempore dolorum dicta dignissimos eum, reprehenderit consequatur, 
+                                                    magni explicabo natus repudiandae molestiae labore quo!
+                                                </p>
+                                                <span>Reply</span>
+                                            </div>
+                                        </div>
+                                        <ul class="commnent-reply">
+                                            <div class="comment-main">
+                                                <div class="user-meta">
+                                                    <img src="../img/wlady-tech-user.jpg" alt="">
+                                                </div>
+                                                <div class="user-commentary">
+                                                    <h5>WladyTechsite</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima placeat, quibusdam animi corrupti modi rerum voluptatum tempore dolorum dicta dignissimos eum, reprehenderit consequatur, 
+                                                        magni explicabo natus repudiandae molestiae labore quo!
+                                                    </p>
+                                                    <span>Reply</span>
+                                                </div>
+                                            </div>     
+                                        </ul>     
+                                    </ul>   
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="comment-main">
+                                    <div class="user-meta">
+                                        <img src="../img/wlady-tech-user.jpg" alt="">
+                                    </div>
+                                    <div class="user-commentary">
+                                        <h5>WladyTechsite</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima placeat, quibusdam animi corrupti modi rerum voluptatum tempore dolorum dicta dignissimos eum, reprehenderit consequatur, 
+                                            magni explicabo natus repudiandae molestiae labore quo!
+                                        </p>
+                                        <span>Reply</span>
+                                    </div>
+                                </div>
+                                <ul class="commnent-reply">
+                                    <div class="comment-main">
+                                        <div class="user-meta">
+                                            <img src="../img/wlady-tech-user.jpg" alt="">
+                                        </div>
+                                        <div class="user-commentary">
+                                            <h5>WladyTechsite</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima placeat, quibusdam animi corrupti modi rerum voluptatum tempore dolorum dicta dignissimos eum, reprehenderit consequatur, 
+                                                magni explicabo natus repudiandae molestiae labore quo!
+                                            </p>
+                                            <span>Reply</span>
+                                        </div>
+                                    </div>     
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- SINGLE POST GRID -->
+        <footer class="footer">
+            <div class="footer_area">
+                <div class="social-media">
+                    <h3 class="mb">Community</h3>
+                    <ul>
+                        <li><a href="#" title="facebook"><i class="fab fa-facebook-square"></i>Facebook</a></li>
+                        <li><a href="#" title="instagram"><i class="fab fa-instagram-square"></i>Instagram</a></li>
+                        <li><a href="#" title="youtube"><i class="fab fa-youtube"></i>Youtube</a></li>
+                        <li><a href="#" title="telegram"><i class="fab fa-telegram"></i>Telegram</a></li>
+                        <li><a href="#" title="twitter"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <h3 class="mb">Information</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-users"></i>About us</a></li>
+                        <li><a href="#"><i class="fab fa-shopify"></i>Our shops</a></li>
+                        <li><a href="#"><i class="fab fa-dochub"></i>Satisfaction survey</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <h3 class="mb">Shopping Guide</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-portrait"></i>Create an account</a></li>
+                        <li><a href="#"><i class="fab fa-paypal"></i>Payings</a></li>
+                        <li><a href="#"><i class="fas fa-shipping-fast"></i>Shipping</a></li>
+                        <li><a href="#"><i class="fab fa-servicestack"></i>Costumer protection</a></li>
+                    </ul>
+                </div>
+    
+                <div class="social-media">
+                    <h3 class="mb">Support</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-dolly-flatbed"></i>Customer support</a></li>
+                        <li><a href="#"><i class="fas fa-bug"></i>Report a bug</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <h3 class="mb">Join to Our Newsletter</h3>
+                    <input class="mb" type="email" placeholder="Your E-mail Address" required="">
+                    <button type="submit">Subscribe</button>
+                    <h3 class="mb">Payment Methods</h3>
+                    <div class="payment-method">
+                        <img src="../img/payment-methods/paypal.png" alt="">
+                        <img src="../img/payment-methods/discover.png" alt="">
+                        <img src="../img/payment-methods/maestro.png" alt="">
+                        <img src="../img/payment-methods/american-express.png" alt="">
+                        <img src="../img/payment-methods/western-union.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="col-50">
+                    <div class="copywrite-text">
+                        <p>Made with <strong> by WladyTechsite</strong> &copy; 2021 </p>
+                    </div>
+                </div>
+                <div class="col-50">
+                    <div class="technology-item">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js-square"></i>
+                        <i class="fab fa-firefox-browser"></i>
+                        <i class="fab fa-chrome"></i>
+                        <i class="fas fa-mobile"></i>
+                        <i class="fab fa-angular"></i>
+                        <i class="fas fa-server"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <button title="back to top" id="btn-scroll" onclick="topfunction()"><span class="fas fa-arrow-up"></span></button>
+    </div>
+    <script src="../js/mostrar.js"></script>
+    <script src="../js/scroll-to-top.js"></script>
+</body>
+</html>
