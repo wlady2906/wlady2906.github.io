@@ -11,9 +11,7 @@
     --gray-active: #424242;
     --red: red;
 }
-html{
-    width: fit-content;
-}
+
 *{
     margin:0;
     padding: 0;
