@@ -1263,6 +1263,7 @@ textarea.form-control{
     display: flex;
     -webkit-box-align: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 .comment-main .user-meta{
     flex: 0 0 90%;
@@ -1293,9 +1294,10 @@ textarea.form-control{
     color: var(--gray-active);
     font-weight: 700;
     line-height: 35px;
+    
 }
 .commnent-reply {
-    margin: 25px 0 65px 65px;
+    margin-left: 60px;
     border-left: 3px solid var(--gray-soft);
     padding: 0 0.5rem;
 }
