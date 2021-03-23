@@ -1162,7 +1162,7 @@ textarea.form-control{
 }
 .blog-content p{
     text-align: justify;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.9;
 }
 .blog-sideoptions{
@@ -1309,7 +1309,7 @@ textarea.form-control{
     overflow: hidden;
 }
  /*  Media queries para pantallas muy pequeñas <= 480px*/
- @media only screen and (min-width: 460px) and (max-width: 48rem) {
+ @media only screen and (min-width: 460px) and (max-width: 47rem) {
     .header{
         grid-template-columns: auto 80px;
          grid-template-areas: 
@@ -1443,6 +1443,7 @@ textarea.form-control{
     }
     .blog-posting-grid{
         margin: 0;
+        padding: 0;
     }
     .user-content::before{
         right: 0;
