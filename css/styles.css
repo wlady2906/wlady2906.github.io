@@ -34,7 +34,6 @@ html{
     border-radius: 5px;
 
 }
-
 ul, ol{
     padding: 0;
     margin: 0;
@@ -70,10 +69,7 @@ a{
     margin-right: auto;
     margin-left: auto;
 }
-div.container{
-    margin-right: 0;
-    padding-right: 0;
-}
+
 /* SIDEBAR */
 .sidebar{
     position: fixed;
@@ -142,7 +138,7 @@ div.container{
 .logo{
     grid-area: logo;
     height: 4.1rem;
-    max-width: 15.8rem;
+    width: 15.8rem;
     cursor: pointer;
 }
 .logo img{
@@ -224,7 +220,7 @@ div.container{
 
 /* OPTIONS PANEL */
 .option-panel{
-    grid-area: options ;
+    grid-area: options;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -1166,6 +1162,7 @@ textarea.form-control{
 }
 .blog-content p{
     text-align: justify;
+    font-size: 18px;
     line-height: 1.9;
 }
 .blog-sideoptions{
@@ -1283,6 +1280,7 @@ textarea.form-control{
 .comment-main .user-commentary p{
     text-align: justify;
     line-height: 1.5;
+    font-size: 14px;
     max-height: 100px;
     display: block;
     display: -webkit-box;
@@ -1313,10 +1311,13 @@ textarea.form-control{
  /*  Media queries para pantallas muy pequeñas <= 480px*/
  @media only screen and (min-width: 460px) and (max-width: 48rem) {
     .header{
-         grid-template-columns: auto 80px;
+        grid-template-columns: auto 80px;
          grid-template-areas: 
          "logo navbar";
          padding: 0;
+    }
+    .product-grid{
+        margin: 3rem;
     }
     .option-panel{display:none;}
     .option-panel{margin: 0;}
@@ -1370,8 +1371,7 @@ textarea.form-control{
         grid-template-columns: repeat(3, 1fr);
     }
     .counter-container{
-        grid-template-columns: repeat(2,1fr);
-        
+        grid-template-columns: repeat(2,1fr);  
     }
     .navbar{
         display: none;
@@ -1396,7 +1396,6 @@ textarea.form-control{
     .product-sheet{
         padding: 1rem;
     }
-    
 
 }
 @media only screen and (max-width: 48rem){
@@ -1439,6 +1438,9 @@ textarea.form-control{
     .header{
         margin: 0;
     }
+    .product-details-grid{
+        margin: 1rem;
+    }
     .blog-posting-grid{
         margin: 0;
     }
@@ -1451,7 +1453,7 @@ textarea.form-control{
     .product-grid{
         grid-template-columns: 1fr;
         grid-template-rows: minmax(430px,auto);
-        margin: 0 6rem;
+        margin: 0 3rem;
     }
     .counter-container{
         grid-template-columns: 1fr;
@@ -1483,5 +1485,4 @@ textarea.form-control{
     }
     
 }
-
 
