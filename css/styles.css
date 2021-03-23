@@ -1296,12 +1296,12 @@ textarea.form-control{
     line-height: 35px;
     
 }
-.commnent-reply {
-    margin-left: 60px;
+.comment-reply {
+    margin-left: 65px;
     border-left: 3px solid var(--gray-soft);
     padding: 0 0.5rem;
 }
-.commnent-reply .user-commentary p{
+.comment-reply .user-commentary p{
     max-height: 48px;
     display: block;
     display: -webkit-box;
@@ -1394,6 +1394,7 @@ textarea.form-control{
         "img"
         "description"
         "tabs";
+        
     }
     .product-sheet{
         padding: 1rem;
@@ -1423,6 +1424,10 @@ textarea.form-control{
     }
     .product-grid{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .blog-posting-grid{
+        margin: 0;
+        padding: 0;
     }
     .counter-container{
         grid-template-columns: repeat(2,1fr);
